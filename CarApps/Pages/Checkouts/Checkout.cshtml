@@ -1,0 +1,14 @@
+﻿@page
+@model CarApps.Pages.Checkouts.CheckoutModel
+@{
+}
+
+
+<h1>Order Completion</h1>
+
+<div class="text-center">
+    <p>Your @Model.CarNumberPlateName is ready!</p>
+    <p>Total price for your is: @Model.CarPrice $</p>
+
+    <a class="btn btn-danger" asp-area="" asp-page="Thankyou">Confirm Payment</a>
+</div>

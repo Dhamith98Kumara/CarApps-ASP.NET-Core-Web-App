@@ -1,0 +1,14 @@
+﻿@page
+@model CarApps.Pages.Forms.CustomCarModel
+@{
+}
+
+<h1>Create Your Custom Car</h1>
+
+<form method="POST">
+    <input type="text" placeholder="Enter Name for your Number Plate" asp-for="Cars.CarNumberPlateName"/><br />
+    <input type="checkbox" asp-for="Cars.Autopilot"/>Autopilot<br />
+    <input type="checkbox" asp-for="Cars.ExteriorPaint"/>Exterior Paint<br />
+    <input type="checkbox" asp-for="Cars.InteriorColor"/>Interior Color<br />
+    <button type="submit" class="btn btn-primary mt-2">Complete Order</button>
+</form>
